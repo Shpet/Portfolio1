@@ -10,10 +10,30 @@
     <link rel="stylesheet" href="style/style.css">
 
     <script src="script/anchor.js" defer></script>
+    <script src="script/modalForm.js" defer></script>
     <script src="https://kit.fontawesome.com/5633ac84f0.js" crossorigin="anonymous"></script>
 </head>
 <body>
 <div class="wrapper" id="anchorTop">
+    <div id="filter"></div>
+    <div id="feedback">
+        <h2>What can we do for you?</h2>
+        <form action="#" method="get">
+            <div>
+                <input type="text" placeholder="Name">
+            </div>
+            <div>
+                <input type="email" placeholder="Email">
+            </div>
+            <div>
+                <textarea rows="8" placeholder="Message"></textarea>
+            </div>
+            <div>
+                <!--<a href="#" id="submitForm">Submit</a>-->
+                <input type="submit" id="subFeedback" value="Submit">
+            </div>
+        </form>
+    </div>
     <header class="header">
         <ul>
             <li><a href="#"><img src="images/logo.png" alt="logo"></a></li>
@@ -34,7 +54,7 @@
                 <br>
                 Your trust is our value.</p>
         </div>
-        <a href="#anchorBottom" ><i class="fas fa-arrow-down"></i></a>
+        <a href="#anchorBottom"><i class="fas fa-arrow-down"></i></a>
     </header>
     <article>
         <div class="what_can_we_do">
@@ -50,7 +70,7 @@
                 dolor sit amet, consectetur adipisicing elit. Possimus, praesentium.
             </p>
             <p>
-                <a href="#">What can we do for you? -></a>
+                <a href="#" id="openForm">What can we do for you? &#11208;</a>
             </p>
         </div>
         <div class="short_lines">
@@ -89,7 +109,7 @@
                 voluptatibus? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim illo inventore itaque
                 molestias nemo velit?</p>
             <p class="team_butt">
-                <a href="#">Meet our team -></a>
+                <a href="#">Meet our team &#11208;</a>
             </p>
             <hr>
         </div>
